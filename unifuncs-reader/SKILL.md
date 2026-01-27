@@ -2,7 +2,7 @@
 name: unifuncs-reader
 description: 使用 UniFuncs API 读取网页、PDF、Word 等文档内容，支持 AI 内容提取。当用户需要阅读、抓取、提取网页或文档内容时使用。
 argument-hint: [URL]
-allowed-tools: Bash(curl:*)
+allowed-tools: Bash(python*:*)
 ---
 
 # UniFuncs 网页阅读 Skill
@@ -16,22 +16,9 @@ allowed-tools: Bash(curl:*)
 
 ## 使用方法
 
-读取网页内容：
 ```bash
-curl -X POST "https://api.unifuncs.com/api/web-reader/read" \
-  -H "Authorization: Bearer $UNIFUNCS_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{"url": "$ARGUMENTS", "format": "md"}'
+python3 scripts/read.py "https://example.com"
+
+# 查看所有参数
+python3 scripts/read.py --help
 ```
-
-## 参数说明
-
-| 参数 | 说明 | 默认值 |
-|------|------|--------|
-| url | 目标 URL | 必填 |
-| format | `md` 或 `txt` | md |
-| topic | AI 提取主题 | 无 |
-
-## 更多信息
-
-- 详细 API 文档见 [api.md](references/api.md)
