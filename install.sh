@@ -34,7 +34,7 @@ git clone --depth 1 "$REPO_URL" "$TEMP_DIR" 2>/dev/null || {
 
 # 复制 Skills
 echo "3. 安装 Skills..."
-for skill in unifunc-search unifunc-reader unifunc-deep-search unifunc-deep-research; do
+for skill in unifuncs-search unifuncs-reader unifuncs-deep-search unifuncs-deep-research; do
     if [ -d "$TEMP_DIR/$skill" ]; then
         cp -r "$TEMP_DIR/$skill" "$SKILLS_DIR/"
         echo "   ✓ $skill"
