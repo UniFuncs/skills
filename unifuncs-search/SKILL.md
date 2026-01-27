@@ -22,7 +22,3 @@ python3 scripts/search.py "搜索关键词"
 # 查看所有参数
 python3 scripts/search.py --help
 ```
-
-## 更多信息
-
-- 详细 API 文档见 [api.md](references/api.md)

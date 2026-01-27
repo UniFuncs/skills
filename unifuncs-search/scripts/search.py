@@ -172,10 +172,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例:
-  %(prog)s "今日金价"
-  %(prog)s "AI 新闻" --area cn --count 20
-  %(prog)s "Python 教程" --freshness Week --include-images
-  %(prog)s "技术文档" --format markdown
+  %(prog)s "今日金价" --page 1 --count 5
         """
     )
 
