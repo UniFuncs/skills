@@ -1,5 +1,5 @@
 ---
-name: unifunc-search
+name: unifuncs-search
 description: 使用 UniFuncs API 进行实时网络搜索，支持全球和中国地域，获取最新网络内容和新闻。当用户需要搜索、查找、联网获取信息时使用。
 argument-hint: [搜索关键词]
 allowed-tools: Bash(curl:*)

@@ -1,5 +1,5 @@
 ---
-name: unifunc-deep-research
+name: unifuncs-deep-research
 description: 使用 UniFuncs API 进行深度研究，生成万字报告，支持多种输出格式。当用户需要深度研究、研究报告、深研时使用。
 argument-hint: [研究主题] [--model u2|u1|u1-pro] [--output-type report|summary|wechat-article]
 allowed-tools: Bash(curl:*)

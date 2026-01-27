@@ -1,5 +1,5 @@
 ---
-name: unifunc-deep-search
+name: unifuncs-deep-search
 description: 使用 UniFuncs API 进行深度搜索，高速全面地搜索信息。当用户需要深度搜索、深搜、全面信息收集时使用。
 argument-hint: [搜索问题]
 allowed-tools: Bash(curl:*)
