@@ -84,7 +84,7 @@ main() {
     print_info "安装 skills..."
 
     # 安装各个 skill
-    for skill in unifuncs-web unifuncs-search unifuncs-research; do
+    for skill in unifuncs-web unifuncs-deep-search unifuncs-deep-research; do
         if [ -d "$TEMP_DIR/$skill" ]; then
             cp -r "$TEMP_DIR/$skill" "$SKILLS_DIR/"
             print_success "已安装: $skill"
