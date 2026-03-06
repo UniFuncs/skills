@@ -29,7 +29,7 @@ curl -X POST "https://api.unifuncs.com/deepsearch/v1/chat/completions" \
 | 参数 | 说明 | 默认值 |
 |------|------|--------|
 | messages | 搜索问题 | 必填 |
-| model | `s2` 或 `s1` | s2 |
+| model | `s3` 或 `s2` 或 `s1` | s3 |
 
 ## 更多信息
 
