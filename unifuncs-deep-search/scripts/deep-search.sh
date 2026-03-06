@@ -11,7 +11,7 @@ if [ -z "$UNIFUNCS_API_KEY" ]; then
 fi
 
 if [ -z "$QUERY" ]; then
-    echo "用法: ./deep-search.sh \"搜索问题\" [model:s3|s1]"
+    echo "用法: ./deep-search.sh \"搜索问题\" [model:s3|s2|s1]"
     exit 1
 fi
 
