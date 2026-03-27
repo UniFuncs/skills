@@ -1,0 +1,29 @@
+{
+    "name": "unifuncs-plugins",
+    "owner": {
+      "name": "UniFuncs",
+      "email": "service@unifuncs.com"
+    },
+    "metadata": {
+      "description": "Official UniFuncs plugin for Claude Code - web search, web reader, deep search, deep research",
+      "version": "1.0.0"
+    },
+    "plugins": [
+      {
+        "name": "unifuncs",
+        "source": "./",
+        "description": "Build AI applications with real-time web data using UniFuncs's web search, web reader, and deep-search, deep-research APIs.",
+        "version": "1.0.0",
+        "author": {
+          "name": "UniFuncs",
+          "email": "service@unifuncs.com"
+        },
+        "homepage": "https://github.com/unifuncs/skills",
+        "repository": "https://github.com/unifuncs/skills",
+        "license": "MIT",
+        "keywords": ["search", "web-search", "reader", "web-reader", "rag", "agents", "llm", "deep-search", "deep-research", "deepsearch", "deepresearch", "research", "crawl", "extract"],
+        "category": "external-integrations",
+        "tags": ["web-search", "web-reader", "deep-search", "deep-research", "deepsearch", "deepresearch", "data-retrieval", "agents", "rag", "research"]
+      }
+    ]
+  }
