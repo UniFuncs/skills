@@ -58,6 +58,12 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help=argparse.SUPPRESS,
     )
+    parser.add_argument(
+        "--stream",
+        action="store_true",
+        default=True,
+        help="Enable streaming mode (default: True).",
+    )
     parser.add_argument("--language", choices=["zh", "en"], help="Output language.")
     parser.add_argument(
         "--reference-style",

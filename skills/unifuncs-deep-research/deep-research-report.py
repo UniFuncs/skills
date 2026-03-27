@@ -37,19 +37,11 @@ def parse_args() -> argparse.Namespace:
         default=DEFAULT_MODEL,
         help=f"Model to use (default: {DEFAULT_MODEL}).",
     )
-    stream_group = parser.add_mutually_exclusive_group()
-    stream_group.add_argument(
+    parser.add_argument(
         "--stream",
-        dest="stream",
         action="store_true",
         default=True,
-        help="Enable streaming output (default).",
-    )
-    stream_group.add_argument(
-        "--no-stream",
-        dest="stream",
-        action="store_false",
-        help="Disable streaming and wait for full response.",
+        help="Enable streaming mode (default: True).",
     )
     parser.add_argument(
         "--timeout",
