@@ -62,8 +62,8 @@ options:
                         Set Cookie header value for pages requiring
                         authentication.
   --max-words MAX_WORDS
-                        Maximum character count to read, range 0-5000000
-                        (default: 5000000).
+                        Maximum character count to read, range 0-1000000
+                        (default: 1000000).
   --read-timeout READ_TIMEOUT
                         Read timeout in milliseconds (default: 180000).
   --topic TOPIC         Extract topic-focused content using an LLM.

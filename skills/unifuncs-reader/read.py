@@ -97,7 +97,7 @@ Examples:
         "--max-words",
         type=int,
         default=DEFAULT_MAX_WORDS,
-        help="Maximum character count to read, range 0-5000000 (default: 5000000).",
+        help="Maximum character count to read, range 0-1000000 (default: 1000000).",
     )
     parser.add_argument(
         "--read-timeout",
@@ -141,8 +141,8 @@ def validate_args(args: argparse.Namespace) -> None:
     if not validate_url(args.url):
         print("Error: URL format appears invalid.", file=sys.stderr)
         sys.exit(1)
-    if not 0 <= args.max_words <= 5_000_000:
-        print("Error: max-words must be between 0 and 5000000.", file=sys.stderr)
+    if not 0 <= args.max_words <= 1_000_000:
+        print("Error: max-words must be between 0 and 1000000.", file=sys.stderr)
         sys.exit(1)
     if args.read_timeout <= 0:
         print("Error: read-timeout must be greater than 0.", file=sys.stderr)
